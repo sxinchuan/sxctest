@@ -1,11 +1,14 @@
 package sxinchuan;
 
-public class Test {
+public class TestInnerClass {
 	
 	
 	public static void main(String[] args) {
-		new Test().new Test2().print();
-		new Test().new Test2().new Test3().print();
+//		new Test().new Test2().print();
+//		new Test().new Test2().new Test3().print();
+		
+		String url = " http://127.0.0.1:9000/ibot-robot-uap/robot-sgcc/services/robotService";
+		System.out.println(url.substring(0, url.indexOf("robot-sgcc")));
 	}
 	
 	
