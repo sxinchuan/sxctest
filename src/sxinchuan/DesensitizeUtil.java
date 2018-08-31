@@ -28,6 +28,9 @@ public class DesensitizeUtil {
         if (StringUtils.isBlank(name)) {
             return "";
         }
+        if (StringUtils.length(name)<6) {
+            return name;
+        }
         return StringUtils.left(name, index).concat(StringUtils.removeStart(StringUtils.leftPad(StringUtils.right(name, end), StringUtils.length(name), "*"), "***"));
     }
 
