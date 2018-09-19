@@ -6,7 +6,7 @@ public class Calculator {
         result = result + n;
     }
     public void substract(int n) {
-        result = result - 1;  //Bug: 正确的应该是 result =result-n
+        result = result - n;  //Bug: 正确的应该是 result =result-n
     }
     public void multiply(int n) {
     }         // 此方法尚未写好
